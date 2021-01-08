@@ -1,3 +1,8 @@
+#!/usr/bin/python3.7
+# -*- coding: utf-8 -*-
+#Written by: Ajin Mathew - ajinmathew ( WordGen )
+# OneSecCyber --> https://github.com/OneSecCyber
+# ajinmathew  --> https://github.com/ajinmathew 
 import pyfiglet
 class WordGen:
 	def __init__(self,wordlist):
@@ -36,6 +41,8 @@ class WordGen:
 def main():
 	ascii_banner = pyfiglet.figlet_format("WordGen")
 	print(ascii_banner)
+	from termcolor import colored
+	print(colored('OneSecCyber', 'red'))
 	input_string = input("Enter words separated by comma : ")
 	word_list  = input_string.split(",")
 	wordgen=WordGen(word_list)
